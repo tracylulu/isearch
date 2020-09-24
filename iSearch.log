@@ -1,0 +1,801 @@
+2020-09-22 08:57:08.024  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : Starting WebApplication on H3CPDM-KF10 with PID 4768 (D:\RD_iSearch\01-Source\iSearch\target\classes started by Administrator in D:\RD_iSearch\01-Source\iSearch)
+2020-09-22 08:57:08.040  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : The following profiles are active: dev
+2020-09-22 08:57:08.133  INFO 4768 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36c002ec: startup date [Tue Sep 22 08:57:08 CST 2020]; root of context hierarchy
+2020-09-22 08:57:11.603  INFO 4768 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2020-09-22 08:57:11.766  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-09-22 08:57:11.769  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 08:57:11.770  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 08:57:11.770  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 08:57:11.770  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 08:57:11.770  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 08:57:11.771  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application-dev.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 08:57:11.771  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 08:57:11.771  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource refresh [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 08:57:11.771  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource class path resource [sso.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 08:57:11.827  INFO 4768 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-09-22 08:57:11.902  INFO 4768 --- [restartedMain] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-09-22 08:57:12.120  INFO 4768 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef2f9074] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-22 08:57:12.363  INFO 4768 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-09-22 08:57:12.363  INFO 4768 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-09-22 08:57:13.946  INFO 4768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 08:57:14.010  INFO 4768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-22 08:57:14.010  INFO 4768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.35
+2020-09-22 08:57:14.033  INFO 4768 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_261/bin/server;C:/Program Files/Java/jre1.8.0_261/bin;C:/Program Files/Java/jre1.8.0_261/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\oracle\product\10.2.0\client_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\software\Git\Git\cmd;D:\software\Git\Git\bin;D:\javaSoftWare\apache-maven-3.5.2-bin\apache-maven-3.5.2\bin;D:\javaSoftWare\mysql\bin;D:\javaSoftWare\mysql_5.5\bin;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;D:\javaSoftWare\FileZilla;C:\Windows\system32;;.]
+2020-09-22 08:57:14.348  INFO 4768 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/iSearch]       : Initializing Spring embedded WebApplicationContext
+2020-09-22 08:57:14.348  INFO 4768 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6215 ms
+2020-09-22 08:57:17.529  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-22 08:57:17.529  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-09-22 08:57:17.529  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-22 08:57:17.529  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-22 08:57:17.529  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-22 08:57:17.529  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-09-22 08:57:17.529  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-09-22 08:57:18.440  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 08:57:18.964  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36c002ec: startup date [Tue Sep 22 08:57:08 CST 2020]; root of context hierarchy
+2020-09-22 08:57:19.129  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/globalQuery/returnQueryView],methods=[GET]}" onto public java.lang.String com.h3c.isearch.controller.GlobalQueryController.returnQueryView()
+2020-09-22 08:57:19.137  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchRange/getRangeView],methods=[GET]}" onto public java.lang.String com.h3c.isearch.controller.SearchRangeController.getRangeView()
+2020-09-22 08:57:19.137  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchRange/searchRangeTable],methods=[POST]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.h3c.isearch.controller.SearchRangeController.searchRangeTable()
+2020-09-22 08:57:19.145  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/insertClickLog],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.h3c.isearch.controller.SearchResultController.insertClickLog(javax.servlet.http.HttpServletRequest,int,java.lang.String,int,java.lang.String,java.lang.String)
+2020-09-22 08:57:19.145  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/searchData],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.h3c.isearch.controller.SearchResultController.searchData(javax.servlet.http.HttpServletRequest,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-09-22 08:57:19.145  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/getSearchResultView],methods=[POST]}" onto public java.lang.String com.h3c.isearch.controller.SearchResultController.getSearchResultView(javax.servlet.http.HttpServletRequest,java.lang.String,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-09-22 08:57:19.154  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-22 08:57:19.154  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 08:57:19.154  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthy],methods=[GET || POST]}" onto public com.eos.common.util.Result com.eos.common.controller.Healthy.healthy()
+2020-09-22 08:57:19.193  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-09-22 08:57:19.233  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 08:57:19.233  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 08:57:19.386  INFO 4768 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos IdWorker init
+2020-09-22 08:57:19.394  INFO 4768 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos BaseHealthy init
+2020-09-22 08:57:20.455  INFO 4768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-22 08:57:20.782  INFO 4768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-22 08:57:20.904  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-09-22 08:57:20.935  INFO 4768 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-22 08:57:20.943  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2020-09-22 08:57:20.943  INFO 4768 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-09-22 08:57:20.943  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-22 08:57:20.943  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-22 08:57:20.943  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2020-09-22 08:57:20.943  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@30dbc244
+2020-09-22 08:57:21.021  WARN 4768 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-22 08:57:21.550  INFO 4768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 08:57:21.591  INFO 4768 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-22 08:57:21.622  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-09-22 08:57:21.622  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-09-22 08:57:21.622  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 08:57:21.764  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-09-22 08:57:21.764  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-22 08:57:21.778  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-22 08:57:21.791  INFO 4768 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-09-22 08:57:21.792  INFO 4768 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-09-22 08:57:21.792  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-22 08:57:21.865  INFO 4768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/iSearch'
+2020-09-22 08:57:21.873  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : Started WebApplication in 14.579 seconds (JVM running for 16.247)
+2020-09-22 08:58:33.687  INFO 4768 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/iSearch]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-22 08:58:33.688  INFO 4768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-22 08:58:33.734  INFO 4768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 46 ms
+2020-09-22 10:16:25.730  INFO 4768 --- [Thread-9] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36c002ec: startup date [Tue Sep 22 08:57:08 CST 2020]; root of context hierarchy
+2020-09-22 10:16:25.739  INFO 4768 --- [Thread-9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-09-22 10:16:25.739  INFO 4768 --- [Thread-9] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-22 10:16:25.739  INFO 4768 --- [Thread-9] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-09-22 10:16:25.739  INFO 4768 --- [Thread-9] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-22 10:16:25.739  INFO 4768 --- [Thread-9] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-22 10:16:25.747  INFO 4768 --- [Thread-9] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-22 10:16:25.747  INFO 4768 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-09-22 10:16:25.747  INFO 4768 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-09-22 10:16:25.747  INFO 4768 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-09-22 10:16:25.772  INFO 4768 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-09-22 10:16:26.418  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : Starting WebApplication on H3CPDM-KF10 with PID 4768 (D:\RD_iSearch\01-Source\iSearch\target\classes started by Administrator in D:\RD_iSearch\01-Source\iSearch)
+2020-09-22 10:16:26.419  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : The following profiles are active: dev
+2020-09-22 10:16:26.427  INFO 4768 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@39edf90: startup date [Tue Sep 22 10:16:26 CST 2020]; root of context hierarchy
+2020-09-22 10:16:27.810  WARN 4768 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.h3c.isearch.mapper]' package. Please check your configuration.
+2020-09-22 10:16:27.899  WARN 4768 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.h3c.isearch]' package. Please check your configuration.
+2020-09-22 10:16:28.246  INFO 4768 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2020-09-22 10:16:28.271  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-09-22 10:16:28.271  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 10:16:28.271  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 10:16:28.271  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:16:28.271  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:16:28.271  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 10:16:28.271  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application-dev.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:16:28.271  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:16:28.271  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource refresh [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:16:28.287  INFO 4768 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-09-22 10:16:28.303  INFO 4768 --- [restartedMain] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-09-22 10:16:28.334  INFO 4768 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef2f9074] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-22 10:16:28.365  INFO 4768 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-09-22 10:16:28.365  INFO 4768 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-09-22 10:16:28.668  INFO 4768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 10:16:28.668  INFO 4768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-22 10:16:28.668  INFO 4768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.35
+2020-09-22 10:16:28.723  INFO 4768 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/iSearch]       : Initializing Spring embedded WebApplicationContext
+2020-09-22 10:16:28.723  INFO 4768 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2296 ms
+2020-09-22 10:16:29.121  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-22 10:16:29.121  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-09-22 10:16:29.121  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-22 10:16:29.121  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-22 10:16:29.121  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-22 10:16:29.121  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-09-22 10:16:29.121  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-09-22 10:16:29.200  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 10:16:29.319  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@39edf90: startup date [Tue Sep 22 10:16:26 CST 2020]; root of context hierarchy
+2020-09-22 10:16:29.343  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-22 10:16:29.343  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 10:16:29.351  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthy],methods=[GET || POST]}" onto public com.eos.common.util.Result com.eos.common.controller.Healthy.healthy()
+2020-09-22 10:16:29.366  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 10:16:29.367  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 10:16:29.435  WARN 4768 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-22 10:16:29.475  INFO 4768 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos IdWorker init
+2020-09-22 10:16:29.475  INFO 4768 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos BaseHealthy init
+2020-09-22 10:16:29.850  INFO 4768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-09-22 10:16:29.876  INFO 4768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-09-22 10:16:29.909  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-09-22 10:16:29.913  INFO 4768 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-22 10:16:29.914  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2020-09-22 10:16:29.915  INFO 4768 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-09-22 10:16:29.916  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-22 10:16:29.917  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-22 10:16:29.917  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2020-09-22 10:16:29.917  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@581931e8
+2020-09-22 10:16:30.074  INFO 4768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 10:16:30.090  INFO 4768 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-22 10:16:30.098  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-09-22 10:16:30.098  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-09-22 10:16:30.098  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 10:16:30.160  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-09-22 10:16:30.168  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-22 10:16:30.177  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-22 10:16:30.177  INFO 4768 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-09-22 10:16:30.177  INFO 4768 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-09-22 10:16:30.177  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-22 10:16:30.200  INFO 4768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/iSearch'
+2020-09-22 10:16:30.200  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : Started WebApplication in 3.897 seconds (JVM running for 4778.681)
+2020-09-22 10:16:30.216  INFO 4768 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   MybatisAutoConfiguration.MapperScannerRegistrarNotFoundConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.mybatis.spring.mapper.MapperFactoryBean; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#viewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.ViewResolver; SearchStrategy: all) found beans 'defaultViewResolver', 'beanNameViewResolver', 'mvcViewResolver'; @ConditionalOnMissingBean (names: viewResolver; types: org.springframework.web.servlet.view.ContentNegotiatingViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-09-22 10:17:28.189  INFO 4768 --- [Thread-13] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@39edf90: startup date [Tue Sep 22 10:16:26 CST 2020]; root of context hierarchy
+2020-09-22 10:17:28.192  INFO 4768 --- [Thread-13] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-09-22 10:17:28.193  INFO 4768 --- [Thread-13] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-22 10:17:28.201  INFO 4768 --- [Thread-13] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-09-22 10:17:28.201  INFO 4768 --- [Thread-13] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-22 10:17:28.201  INFO 4768 --- [Thread-13] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-22 10:17:28.201  INFO 4768 --- [Thread-13] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-22 10:17:28.201  INFO 4768 --- [Thread-13] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-09-22 10:17:28.201  INFO 4768 --- [Thread-13] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-09-22 10:17:28.201  INFO 4768 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-09-22 10:17:28.208  INFO 4768 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-09-22 10:17:28.924  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : Starting WebApplication on H3CPDM-KF10 with PID 4768 (D:\RD_iSearch\01-Source\iSearch\target\classes started by Administrator in D:\RD_iSearch\01-Source\iSearch)
+2020-09-22 10:17:28.925  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : The following profiles are active: dev
+2020-09-22 10:17:28.930  INFO 4768 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3450fcb5: startup date [Tue Sep 22 10:17:28 CST 2020]; root of context hierarchy
+2020-09-22 10:17:29.871  WARN 4768 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.h3c.isearch.mapper]' package. Please check your configuration.
+2020-09-22 10:17:29.930  WARN 4768 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.h3c.isearch]' package. Please check your configuration.
+2020-09-22 10:17:30.166  INFO 4768 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2020-09-22 10:17:30.182  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-09-22 10:17:30.182  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 10:17:30.189  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 10:17:30.189  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:17:30.189  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:17:30.189  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 10:17:30.189  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application-dev.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:17:30.189  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:17:30.189  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource refresh [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:17:30.197  INFO 4768 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-09-22 10:17:30.205  INFO 4768 --- [restartedMain] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-09-22 10:17:30.228  INFO 4768 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef2f9074] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-22 10:17:30.252  INFO 4768 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-09-22 10:17:30.252  INFO 4768 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-09-22 10:17:30.527  INFO 4768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 10:17:30.535  INFO 4768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-22 10:17:30.535  INFO 4768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.35
+2020-09-22 10:17:30.575  INFO 4768 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/iSearch]       : Initializing Spring embedded WebApplicationContext
+2020-09-22 10:17:30.578  INFO 4768 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1648 ms
+2020-09-22 10:17:30.854  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-22 10:17:30.854  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-09-22 10:17:30.854  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-22 10:17:30.854  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-22 10:17:30.854  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-22 10:17:30.854  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-09-22 10:17:30.854  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-09-22 10:17:30.909  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 10:17:31.003  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3450fcb5: startup date [Tue Sep 22 10:17:28 CST 2020]; root of context hierarchy
+2020-09-22 10:17:31.011  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-22 10:17:31.019  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 10:17:31.019  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthy],methods=[GET || POST]}" onto public com.eos.common.util.Result com.eos.common.controller.Healthy.healthy()
+2020-09-22 10:17:31.034  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 10:17:31.034  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 10:17:31.073  WARN 4768 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-22 10:17:31.089  INFO 4768 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos IdWorker init
+2020-09-22 10:17:31.089  INFO 4768 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos BaseHealthy init
+2020-09-22 10:17:31.333  INFO 4768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-09-22 10:17:31.341  INFO 4768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-09-22 10:17:31.364  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-09-22 10:17:31.372  INFO 4768 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-22 10:17:31.372  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2020-09-22 10:17:31.372  INFO 4768 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-09-22 10:17:31.372  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-22 10:17:31.372  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-22 10:17:31.372  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2020-09-22 10:17:31.372  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@6c2bf0b3
+2020-09-22 10:17:31.518  INFO 4768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 10:17:31.533  INFO 4768 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-22 10:17:31.533  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-09-22 10:17:31.541  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-09-22 10:17:31.541  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 10:17:31.588  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-09-22 10:17:31.588  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-22 10:17:31.596  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-22 10:17:31.596  INFO 4768 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-09-22 10:17:31.596  INFO 4768 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-09-22 10:17:31.596  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-22 10:17:31.619  INFO 4768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/iSearch'
+2020-09-22 10:17:31.619  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : Started WebApplication in 2.754 seconds (JVM running for 4840.095)
+2020-09-22 10:17:31.619  INFO 4768 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-22 10:17:50.867  INFO 4768 --- [Thread-22] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3450fcb5: startup date [Tue Sep 22 10:17:28 CST 2020]; root of context hierarchy
+2020-09-22 10:17:50.876  INFO 4768 --- [Thread-22] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-09-22 10:17:50.876  INFO 4768 --- [Thread-22] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-22 10:17:50.876  INFO 4768 --- [Thread-22] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-09-22 10:17:50.876  INFO 4768 --- [Thread-22] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-22 10:17:50.876  INFO 4768 --- [Thread-22] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-22 10:17:50.876  INFO 4768 --- [Thread-22] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-22 10:17:50.876  INFO 4768 --- [Thread-22] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-09-22 10:17:50.876  INFO 4768 --- [Thread-22] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-09-22 10:17:50.876  INFO 4768 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2020-09-22 10:17:50.883  INFO 4768 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2020-09-22 10:17:51.531  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : Starting WebApplication on H3CPDM-KF10 with PID 4768 (D:\RD_iSearch\01-Source\iSearch\target\classes started by Administrator in D:\RD_iSearch\01-Source\iSearch)
+2020-09-22 10:17:51.531  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : The following profiles are active: dev
+2020-09-22 10:17:51.539  INFO 4768 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@49c95551: startup date [Tue Sep 22 10:17:51 CST 2020]; root of context hierarchy
+2020-09-22 10:17:52.649  WARN 4768 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.h3c.isearch.mapper]' package. Please check your configuration.
+2020-09-22 10:17:52.720  WARN 4768 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.h3c.isearch]' package. Please check your configuration.
+2020-09-22 10:17:53.066  INFO 4768 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2020-09-22 10:17:53.073  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-09-22 10:17:53.073  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 10:17:53.073  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 10:17:53.073  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:17:53.073  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:17:53.073  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 10:17:53.073  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application-dev.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:17:53.073  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:17:53.073  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource refresh [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:17:53.111  INFO 4768 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-09-22 10:17:53.118  INFO 4768 --- [restartedMain] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-09-22 10:17:53.142  INFO 4768 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef2f9074] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-22 10:17:53.165  INFO 4768 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-09-22 10:17:53.165  INFO 4768 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-09-22 10:17:53.562  INFO 4768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 10:17:53.562  INFO 4768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-22 10:17:53.562  INFO 4768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.35
+2020-09-22 10:17:53.648  INFO 4768 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/iSearch]       : Initializing Spring embedded WebApplicationContext
+2020-09-22 10:17:53.648  INFO 4768 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2109 ms
+2020-09-22 10:17:53.959  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-22 10:17:53.960  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-09-22 10:17:53.960  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-22 10:17:53.960  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-22 10:17:53.960  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-22 10:17:53.961  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-09-22 10:17:53.961  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-09-22 10:17:54.017  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 10:17:54.127  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@49c95551: startup date [Tue Sep 22 10:17:51 CST 2020]; root of context hierarchy
+2020-09-22 10:17:54.147  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-22 10:17:54.147  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 10:17:54.150  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthy],methods=[GET || POST]}" onto public com.eos.common.util.Result com.eos.common.controller.Healthy.healthy()
+2020-09-22 10:17:54.174  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 10:17:54.175  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 10:17:54.223  WARN 4768 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-22 10:17:54.247  INFO 4768 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos IdWorker init
+2020-09-22 10:17:54.247  INFO 4768 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos BaseHealthy init
+2020-09-22 10:17:54.570  INFO 4768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2020-09-22 10:17:54.593  INFO 4768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2020-09-22 10:17:54.617  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-09-22 10:17:54.617  INFO 4768 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-22 10:17:54.617  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2020-09-22 10:17:54.617  INFO 4768 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-09-22 10:17:54.617  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-22 10:17:54.617  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-22 10:17:54.617  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2020-09-22 10:17:54.617  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@269337b2
+2020-09-22 10:17:54.886  INFO 4768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 10:17:54.897  INFO 4768 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-22 10:17:54.904  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-09-22 10:17:54.904  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-09-22 10:17:54.904  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 10:17:54.963  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-09-22 10:17:54.965  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-22 10:17:54.979  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-22 10:17:54.979  INFO 4768 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-09-22 10:17:54.979  INFO 4768 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-09-22 10:17:54.979  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-22 10:17:55.003  INFO 4768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/iSearch'
+2020-09-22 10:17:55.010  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : Started WebApplication in 3.544 seconds (JVM running for 4863.485)
+2020-09-22 10:17:55.010  INFO 4768 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-22 10:17:56.570  INFO 4768 --- [Thread-31] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@49c95551: startup date [Tue Sep 22 10:17:51 CST 2020]; root of context hierarchy
+2020-09-22 10:17:56.570  INFO 4768 --- [Thread-31] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-09-22 10:17:56.570  INFO 4768 --- [Thread-31] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-22 10:17:56.572  INFO 4768 --- [Thread-31] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-09-22 10:17:56.572  INFO 4768 --- [Thread-31] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-22 10:17:56.572  INFO 4768 --- [Thread-31] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-22 10:17:56.573  INFO 4768 --- [Thread-31] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-22 10:17:56.573  INFO 4768 --- [Thread-31] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-09-22 10:17:56.574  INFO 4768 --- [Thread-31] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-09-22 10:17:56.575  INFO 4768 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2020-09-22 10:17:56.583  INFO 4768 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2020-09-22 10:17:57.160  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : Starting WebApplication on H3CPDM-KF10 with PID 4768 (D:\RD_iSearch\01-Source\iSearch\target\classes started by Administrator in D:\RD_iSearch\01-Source\iSearch)
+2020-09-22 10:17:57.160  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : The following profiles are active: dev
+2020-09-22 10:17:57.168  INFO 4768 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19c8541: startup date [Tue Sep 22 10:17:57 CST 2020]; root of context hierarchy
+2020-09-22 10:17:58.673  INFO 4768 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2020-09-22 10:17:58.687  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-09-22 10:17:58.688  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 10:17:58.688  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 10:17:58.688  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:17:58.688  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:17:58.688  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 10:17:58.689  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application-dev.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:17:58.689  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:17:58.689  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource refresh [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:17:58.689  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource class path resource [sso.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:17:58.699  INFO 4768 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-09-22 10:17:58.709  INFO 4768 --- [restartedMain] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-09-22 10:17:58.727  INFO 4768 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef2f9074] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-22 10:17:58.745  INFO 4768 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-09-22 10:17:58.745  INFO 4768 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-09-22 10:17:58.965  INFO 4768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 10:17:58.968  INFO 4768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-22 10:17:58.968  INFO 4768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.35
+2020-09-22 10:17:59.019  INFO 4768 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/iSearch]       : Initializing Spring embedded WebApplicationContext
+2020-09-22 10:17:59.021  INFO 4768 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1853 ms
+2020-09-22 10:17:59.294  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-22 10:17:59.294  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-09-22 10:17:59.295  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-22 10:17:59.295  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-22 10:17:59.295  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-22 10:17:59.295  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-09-22 10:17:59.295  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-09-22 10:17:59.627  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 10:17:59.721  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19c8541: startup date [Tue Sep 22 10:17:57 CST 2020]; root of context hierarchy
+2020-09-22 10:17:59.744  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/globalQuery/returnQueryView],methods=[GET]}" onto public java.lang.String com.h3c.isearch.controller.GlobalQueryController.returnQueryView()
+2020-09-22 10:17:59.746  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchRange/getRangeView],methods=[GET]}" onto public java.lang.String com.h3c.isearch.controller.SearchRangeController.getRangeView()
+2020-09-22 10:17:59.747  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchRange/searchRangeTable],methods=[POST]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.h3c.isearch.controller.SearchRangeController.searchRangeTable()
+2020-09-22 10:17:59.752  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/insertClickLog],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.h3c.isearch.controller.SearchResultController.insertClickLog(javax.servlet.http.HttpServletRequest,int,java.lang.String,int,java.lang.String,java.lang.String)
+2020-09-22 10:17:59.753  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/searchData],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.h3c.isearch.controller.SearchResultController.searchData(javax.servlet.http.HttpServletRequest,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-09-22 10:17:59.754  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/getSearchResultView],methods=[POST]}" onto public java.lang.String com.h3c.isearch.controller.SearchResultController.getSearchResultView(javax.servlet.http.HttpServletRequest,java.lang.String,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-09-22 10:17:59.757  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-22 10:17:59.757  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 10:17:59.758  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthy],methods=[GET || POST]}" onto public com.eos.common.util.Result com.eos.common.controller.Healthy.healthy()
+2020-09-22 10:17:59.768  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-09-22 10:17:59.777  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 10:17:59.778  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 10:17:59.823  INFO 4768 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos IdWorker init
+2020-09-22 10:17:59.824  INFO 4768 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos BaseHealthy init
+2020-09-22 10:17:59.983  INFO 4768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2020-09-22 10:18:00.011  INFO 4768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2020-09-22 10:18:00.039  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-09-22 10:18:00.043  INFO 4768 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-22 10:18:00.043  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2020-09-22 10:18:00.043  INFO 4768 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-09-22 10:18:00.043  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-22 10:18:00.044  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-22 10:18:00.044  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2020-09-22 10:18:00.044  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@4d0f4402
+2020-09-22 10:18:00.064  WARN 4768 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-22 10:18:00.279  INFO 4768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 10:18:00.295  INFO 4768 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-22 10:18:00.302  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-09-22 10:18:00.303  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-09-22 10:18:00.303  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 10:18:00.376  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-09-22 10:18:00.377  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-22 10:18:00.392  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-22 10:18:00.404  INFO 4768 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-09-22 10:18:00.406  INFO 4768 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-09-22 10:18:00.406  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-22 10:18:00.425  INFO 4768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/iSearch'
+2020-09-22 10:18:00.428  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : Started WebApplication in 3.329 seconds (JVM running for 4868.958)
+2020-09-22 10:18:00.435  INFO 4768 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   MybatisAutoConfiguration.MapperScannerRegistrarNotFoundConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.mybatis.spring.mapper.MapperFactoryBean; SearchStrategy: all) found beans of type 'org.mybatis.spring.mapper.MapperFactoryBean' &clickLogMapper, &searchRangeMapper, &searchLogMapper (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#viewResolver:
+      Did not match:
+         - @ConditionalOnMissingBean (names: viewResolver; types: org.springframework.web.servlet.view.ContentNegotiatingViewResolver; SearchStrategy: all) found beans named viewResolver (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-09-22 10:18:03.556  INFO 4768 --- [Thread-40] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19c8541: startup date [Tue Sep 22 10:17:57 CST 2020]; root of context hierarchy
+2020-09-22 10:18:03.558  INFO 4768 --- [Thread-40] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-09-22 10:18:03.558  INFO 4768 --- [Thread-40] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-22 10:18:03.559  INFO 4768 --- [Thread-40] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-09-22 10:18:03.560  INFO 4768 --- [Thread-40] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-22 10:18:03.560  INFO 4768 --- [Thread-40] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-09-22 10:18:03.560  INFO 4768 --- [Thread-40] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-22 10:18:03.560  INFO 4768 --- [Thread-40] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-09-22 10:18:03.561  INFO 4768 --- [Thread-40] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-09-22 10:18:03.562  INFO 4768 --- [Thread-40] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2020-09-22 10:18:03.574  INFO 4768 --- [Thread-40] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2020-09-22 10:18:04.310  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : Starting WebApplication on H3CPDM-KF10 with PID 4768 (D:\RD_iSearch\01-Source\iSearch\target\classes started by Administrator in D:\RD_iSearch\01-Source\iSearch)
+2020-09-22 10:18:04.311  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : The following profiles are active: dev
+2020-09-22 10:18:04.316  INFO 4768 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@49a49e93: startup date [Tue Sep 22 10:18:04 CST 2020]; root of context hierarchy
+2020-09-22 10:18:05.583  INFO 4768 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2020-09-22 10:18:05.595  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-09-22 10:18:05.595  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 10:18:05.595  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 10:18:05.596  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:18:05.596  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:18:05.596  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 10:18:05.596  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application-dev.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:18:05.596  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:18:05.596  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource refresh [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:18:05.596  INFO 4768 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource class path resource [sso.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 10:18:05.603  INFO 4768 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-09-22 10:18:05.613  INFO 4768 --- [restartedMain] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-09-22 10:18:05.630  INFO 4768 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef2f9074] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-22 10:18:05.649  INFO 4768 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-09-22 10:18:05.649  INFO 4768 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-09-22 10:18:05.864  INFO 4768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 10:18:05.865  INFO 4768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-22 10:18:05.865  INFO 4768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.35
+2020-09-22 10:18:05.908  INFO 4768 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/iSearch]       : Initializing Spring embedded WebApplicationContext
+2020-09-22 10:18:05.909  INFO 4768 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1593 ms
+2020-09-22 10:18:06.137  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-22 10:18:06.137  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-09-22 10:18:06.137  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-22 10:18:06.137  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-22 10:18:06.137  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-22 10:18:06.138  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-09-22 10:18:06.138  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-09-22 10:18:06.483  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 10:18:06.576  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@49a49e93: startup date [Tue Sep 22 10:18:04 CST 2020]; root of context hierarchy
+2020-09-22 10:18:06.594  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/globalQuery/returnQueryView],methods=[GET]}" onto public java.lang.String com.h3c.isearch.controller.GlobalQueryController.returnQueryView()
+2020-09-22 10:18:06.594  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchRange/getRangeView],methods=[GET]}" onto public java.lang.String com.h3c.isearch.controller.SearchRangeController.getRangeView()
+2020-09-22 10:18:06.595  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchRange/searchRangeTable],methods=[POST]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.h3c.isearch.controller.SearchRangeController.searchRangeTable()
+2020-09-22 10:18:06.598  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/insertClickLog],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.h3c.isearch.controller.SearchResultController.insertClickLog(javax.servlet.http.HttpServletRequest,int,java.lang.String,int,java.lang.String,java.lang.String)
+2020-09-22 10:18:06.599  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/searchData],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.h3c.isearch.controller.SearchResultController.searchData(javax.servlet.http.HttpServletRequest,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-09-22 10:18:06.599  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/getSearchResultView],methods=[POST]}" onto public java.lang.String com.h3c.isearch.controller.SearchResultController.getSearchResultView(javax.servlet.http.HttpServletRequest,java.lang.String,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-09-22 10:18:06.602  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-22 10:18:06.602  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 10:18:06.603  INFO 4768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthy],methods=[GET || POST]}" onto public com.eos.common.util.Result com.eos.common.controller.Healthy.healthy()
+2020-09-22 10:18:06.613  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-09-22 10:18:06.623  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 10:18:06.623  INFO 4768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 10:18:06.665  INFO 4768 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos IdWorker init
+2020-09-22 10:18:06.667  INFO 4768 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos BaseHealthy init
+2020-09-22 10:18:06.807  INFO 4768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2020-09-22 10:18:06.820  INFO 4768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2020-09-22 10:18:06.839  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-09-22 10:18:06.842  INFO 4768 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-22 10:18:06.843  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2020-09-22 10:18:06.843  INFO 4768 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-09-22 10:18:06.843  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-22 10:18:06.843  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-22 10:18:06.843  INFO 4768 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2020-09-22 10:18:06.843  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@3ad87f5f
+2020-09-22 10:18:06.856  WARN 4768 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-22 10:18:06.997  INFO 4768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 10:18:07.008  INFO 4768 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-22 10:18:07.014  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-09-22 10:18:07.014  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-09-22 10:18:07.014  INFO 4768 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 10:18:07.060  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-09-22 10:18:07.061  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-22 10:18:07.067  INFO 4768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-22 10:18:07.069  INFO 4768 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-09-22 10:18:07.070  INFO 4768 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-09-22 10:18:07.070  INFO 4768 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-22 10:18:07.090  INFO 4768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/iSearch'
+2020-09-22 10:18:07.091  INFO 4768 --- [restartedMain] com.h3c.isearch.WebApplication           : Started WebApplication in 2.833 seconds (JVM running for 4875.679)
+2020-09-22 10:18:07.096  INFO 4768 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-22 16:11:22.450  INFO 7892 --- [restartedMain] com.h3c.isearch.WebApplication           : Starting WebApplication on H3CPDM-KF10 with PID 7892 (D:\RD_iSearch\01-Source\iSearch\target\classes started by Administrator in D:\RD_iSearch\01-Source\iSearch)
+2020-09-22 16:11:22.458  INFO 7892 --- [restartedMain] com.h3c.isearch.WebApplication           : The following profiles are active: prod
+2020-09-22 16:11:22.552  INFO 7892 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@29f10b91: startup date [Tue Sep 22 16:11:22 CST 2020]; root of context hierarchy
+2020-09-22 16:11:26.375  INFO 7892 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2020-09-22 16:11:26.587  INFO 7892 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-09-22 16:11:26.587  INFO 7892 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 16:11:26.587  INFO 7892 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 16:11:26.587  INFO 7892 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:11:26.587  INFO 7892 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:11:26.595  INFO 7892 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 16:11:26.595  INFO 7892 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application-prod.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:11:26.595  INFO 7892 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:11:26.595  INFO 7892 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource refresh [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:11:26.595  INFO 7892 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource class path resource [sso.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:11:26.658  INFO 7892 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-09-22 16:11:26.751  INFO 7892 --- [restartedMain] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-09-22 16:11:27.023  INFO 7892 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$356f20a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-22 16:11:27.323  INFO 7892 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-09-22 16:11:27.328  INFO 7892 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-09-22 16:11:28.695  INFO 7892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 16:11:28.782  INFO 7892 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-22 16:11:28.782  INFO 7892 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.35
+2020-09-22 16:11:28.820  INFO 7892 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_261/bin/server;C:/Program Files/Java/jre1.8.0_261/bin;C:/Program Files/Java/jre1.8.0_261/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\oracle\product\10.2.0\client_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\software\Git\Git\cmd;D:\software\Git\Git\bin;D:\javaSoftWare\apache-maven-3.5.2-bin\apache-maven-3.5.2\bin;D:\javaSoftWare\mysql\bin;D:\javaSoftWare\mysql_5.5\bin;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;D:\javaSoftWare\FileZilla;C:\Windows\system32;;.]
+2020-09-22 16:11:29.141  INFO 7892 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/iSearch]       : Initializing Spring embedded WebApplicationContext
+2020-09-22 16:11:29.141  INFO 7892 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6589 ms
+2020-09-22 16:11:31.310  INFO 7892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-22 16:11:31.312  INFO 7892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-09-22 16:11:31.312  INFO 7892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-22 16:11:31.312  INFO 7892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-22 16:11:31.313  INFO 7892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-22 16:11:31.313  INFO 7892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-09-22 16:11:31.313  INFO 7892 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-09-22 16:11:32.298  INFO 7892 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 16:11:32.845  INFO 7892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@29f10b91: startup date [Tue Sep 22 16:11:22 CST 2020]; root of context hierarchy
+2020-09-22 16:11:33.080  INFO 7892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/globalQuery/returnQueryView],methods=[GET]}" onto public java.lang.String com.h3c.isearch.controller.GlobalQueryController.returnQueryView()
+2020-09-22 16:11:33.088  INFO 7892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchRange/getRangeView],methods=[GET]}" onto public java.lang.String com.h3c.isearch.controller.SearchRangeController.getRangeView()
+2020-09-22 16:11:33.088  INFO 7892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchRange/searchRangeTable],methods=[POST]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.h3c.isearch.controller.SearchRangeController.searchRangeTable()
+2020-09-22 16:11:33.096  INFO 7892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/getSearchResultView],methods=[POST]}" onto public java.lang.String com.h3c.isearch.controller.SearchResultController.getSearchResultView(javax.servlet.http.HttpServletRequest,java.lang.String,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-09-22 16:11:33.096  INFO 7892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/searchData],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.h3c.isearch.controller.SearchResultController.searchData(javax.servlet.http.HttpServletRequest,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-09-22 16:11:33.096  INFO 7892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/insertClickLog],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.h3c.isearch.controller.SearchResultController.insertClickLog(javax.servlet.http.HttpServletRequest,int,java.lang.String,int,java.lang.String,java.lang.String)
+2020-09-22 16:11:33.096  INFO 7892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-22 16:11:33.104  INFO 7892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 16:11:33.112  INFO 7892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthy],methods=[GET || POST]}" onto public com.eos.common.util.Result com.eos.common.controller.Healthy.healthy()
+2020-09-22 16:11:33.151  INFO 7892 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-09-22 16:11:33.190  INFO 7892 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 16:11:33.190  INFO 7892 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 16:11:33.377  INFO 7892 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos IdWorker init
+2020-09-22 16:11:33.385  INFO 7892 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos BaseHealthy init
+2020-09-22 16:11:34.478  INFO 7892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-22 16:19:19.394  INFO 11696 --- [restartedMain] com.h3c.isearch.WebApplication           : Starting WebApplication on H3CPDM-KF10 with PID 11696 (D:\RD_iSearch\01-Source\iSearch\target\classes started by Administrator in D:\RD_iSearch\01-Source\iSearch)
+2020-09-22 16:19:19.401  INFO 11696 --- [restartedMain] com.h3c.isearch.WebApplication           : The following profiles are active: dev
+2020-09-22 16:19:19.503  INFO 11696 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@250110e3: startup date [Tue Sep 22 16:19:19 CST 2020]; root of context hierarchy
+2020-09-22 16:19:23.129  INFO 11696 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2020-09-22 16:19:23.302  INFO 11696 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-09-22 16:19:23.302  INFO 11696 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 16:19:23.302  INFO 11696 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 16:19:23.302  INFO 11696 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:19:23.302  INFO 11696 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:19:23.302  INFO 11696 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 16:19:23.302  INFO 11696 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application-dev.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:19:23.302  INFO 11696 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:19:23.302  INFO 11696 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource refresh [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:19:23.302  INFO 11696 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource class path resource [sso.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:19:23.357  INFO 11696 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-09-22 16:19:23.443  INFO 11696 --- [restartedMain] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-09-22 16:19:23.661  INFO 11696 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fc47e01b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-22 16:19:23.960  INFO 11696 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-09-22 16:19:23.965  INFO 11696 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-09-22 16:19:25.286  INFO 11696 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 16:19:25.358  INFO 11696 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-22 16:19:25.358  INFO 11696 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.35
+2020-09-22 16:19:25.374  INFO 11696 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_261/bin/server;C:/Program Files/Java/jre1.8.0_261/bin;C:/Program Files/Java/jre1.8.0_261/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\oracle\product\10.2.0\client_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\software\Git\Git\cmd;D:\software\Git\Git\bin;D:\javaSoftWare\apache-maven-3.5.2-bin\apache-maven-3.5.2\bin;D:\javaSoftWare\mysql\bin;D:\javaSoftWare\mysql_5.5\bin;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;D:\javaSoftWare\FileZilla;C:\Windows\system32;;.]
+2020-09-22 16:19:25.655  INFO 11696 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/iSearch]       : Initializing Spring embedded WebApplicationContext
+2020-09-22 16:19:25.655  INFO 11696 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6152 ms
+2020-09-22 16:19:27.643  INFO 11696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-22 16:19:27.643  INFO 11696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-09-22 16:19:27.643  INFO 11696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-22 16:19:27.643  INFO 11696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-22 16:19:27.643  INFO 11696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-22 16:19:27.643  INFO 11696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-09-22 16:19:27.643  INFO 11696 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-09-22 16:19:28.626  INFO 11696 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 16:19:29.115  INFO 11696 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@250110e3: startup date [Tue Sep 22 16:19:19 CST 2020]; root of context hierarchy
+2020-09-22 16:19:29.304  INFO 11696 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/globalQuery/returnQueryView],methods=[GET]}" onto public java.lang.String com.h3c.isearch.controller.GlobalQueryController.returnQueryView()
+2020-09-22 16:19:29.311  INFO 11696 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchRange/getRangeView],methods=[GET]}" onto public java.lang.String com.h3c.isearch.controller.SearchRangeController.getRangeView()
+2020-09-22 16:19:29.311  INFO 11696 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchRange/searchRangeTable],methods=[POST]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.h3c.isearch.controller.SearchRangeController.searchRangeTable()
+2020-09-22 16:19:29.319  INFO 11696 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/getSearchResultView],methods=[POST]}" onto public java.lang.String com.h3c.isearch.controller.SearchResultController.getSearchResultView(javax.servlet.http.HttpServletRequest,java.lang.String,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-09-22 16:19:29.319  INFO 11696 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/searchData],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.h3c.isearch.controller.SearchResultController.searchData(javax.servlet.http.HttpServletRequest,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-09-22 16:19:29.319  INFO 11696 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/insertClickLog],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.h3c.isearch.controller.SearchResultController.insertClickLog(javax.servlet.http.HttpServletRequest,int,java.lang.String,int,java.lang.String,java.lang.String)
+2020-09-22 16:19:29.327  INFO 11696 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-22 16:19:29.327  INFO 11696 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 16:19:29.335  INFO 11696 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthy],methods=[GET || POST]}" onto public com.eos.common.util.Result com.eos.common.controller.Healthy.healthy()
+2020-09-22 16:19:29.374  INFO 11696 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-09-22 16:19:29.421  INFO 11696 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 16:19:29.421  INFO 11696 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 16:19:29.617  INFO 11696 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos IdWorker init
+2020-09-22 16:19:29.625  INFO 11696 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos BaseHealthy init
+2020-09-22 16:19:30.639  INFO 11696 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-22 16:19:30.955  INFO 11696 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-22 16:19:31.092  INFO 11696 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-09-22 16:19:31.123  INFO 11696 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-22 16:19:31.123  INFO 11696 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2020-09-22 16:19:31.131  INFO 11696 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-09-22 16:19:31.131  INFO 11696 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-22 16:19:31.131  INFO 11696 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-22 16:19:31.131  INFO 11696 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2020-09-22 16:19:31.131  INFO 11696 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@604b0eb9
+2020-09-22 16:19:31.194  WARN 11696 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-22 16:19:31.694  INFO 11696 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 16:19:31.735  INFO 11696 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-22 16:19:31.774  INFO 11696 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-09-22 16:19:31.774  INFO 11696 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-09-22 16:19:31.782  INFO 11696 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 16:19:31.930  INFO 11696 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-09-22 16:19:31.930  INFO 11696 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-22 16:19:31.939  INFO 11696 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-22 16:19:31.950  INFO 11696 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-09-22 16:19:31.951  INFO 11696 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-09-22 16:19:31.951  INFO 11696 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-22 16:19:32.031  INFO 11696 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/iSearch'
+2020-09-22 16:19:32.039  INFO 11696 --- [restartedMain] com.h3c.isearch.WebApplication           : Started WebApplication in 13.366 seconds (JVM running for 15.225)
+2020-09-22 16:19:45.905  INFO 11696 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/iSearch]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-22 16:19:45.906  INFO 11696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-22 16:19:45.967  INFO 11696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 61 ms
+2020-09-22 16:22:55.129  INFO 2964 --- [restartedMain] com.h3c.isearch.WebApplication           : Starting WebApplication on H3CPDM-KF10 with PID 2964 (D:\RD_iSearch\01-Source\iSearch\target\classes started by Administrator in D:\RD_iSearch\01-Source\iSearch)
+2020-09-22 16:22:55.137  INFO 2964 --- [restartedMain] com.h3c.isearch.WebApplication           : The following profiles are active: dev
+2020-09-22 16:22:55.239  INFO 2964 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@26a8c1d2: startup date [Tue Sep 22 16:22:55 CST 2020]; root of context hierarchy
+2020-09-22 16:22:58.704  INFO 2964 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2020-09-22 16:22:58.901  INFO 2964 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-09-22 16:22:58.901  INFO 2964 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 16:22:58.901  INFO 2964 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 16:22:58.901  INFO 2964 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:22:58.901  INFO 2964 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:22:58.901  INFO 2964 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-09-22 16:22:58.901  INFO 2964 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application-dev.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:22:58.901  INFO 2964 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:22:58.901  INFO 2964 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource refresh [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:22:58.901  INFO 2964 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource class path resource [sso.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-22 16:22:58.955  INFO 2964 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-09-22 16:22:59.027  INFO 2964 --- [restartedMain] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-09-22 16:22:59.266  INFO 2964 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$72ec3b9e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-22 16:22:59.524  INFO 2964 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-09-22 16:22:59.530  INFO 2964 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-09-22 16:23:00.782  INFO 2964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 16:23:00.853  INFO 2964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-22 16:23:00.853  INFO 2964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.35
+2020-09-22 16:23:00.869  INFO 2964 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_261/bin/server;C:/Program Files/Java/jre1.8.0_261/bin;C:/Program Files/Java/jre1.8.0_261/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\oracle\product\10.2.0\client_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\software\Git\Git\cmd;D:\software\Git\Git\bin;D:\javaSoftWare\apache-maven-3.5.2-bin\apache-maven-3.5.2\bin;D:\javaSoftWare\mysql\bin;D:\javaSoftWare\mysql_5.5\bin;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;D:\javaSoftWare\FileZilla;C:\Windows\system32;;.]
+2020-09-22 16:23:01.143  INFO 2964 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/iSearch]       : Initializing Spring embedded WebApplicationContext
+2020-09-22 16:23:01.143  INFO 2964 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5904 ms
+2020-09-22 16:23:03.064  INFO 2964 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-22 16:23:03.064  INFO 2964 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-09-22 16:23:03.064  INFO 2964 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-22 16:23:03.064  INFO 2964 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-22 16:23:03.064  INFO 2964 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-22 16:23:03.064  INFO 2964 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-09-22 16:23:03.064  INFO 2964 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-09-22 16:23:04.370  INFO 2964 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 16:23:04.861  INFO 2964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@26a8c1d2: startup date [Tue Sep 22 16:22:55 CST 2020]; root of context hierarchy
+2020-09-22 16:23:05.041  INFO 2964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/globalQuery/returnQueryView],methods=[GET]}" onto public java.lang.String com.h3c.isearch.controller.GlobalQueryController.returnQueryView()
+2020-09-22 16:23:05.049  INFO 2964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchRange/getRangeView],methods=[GET]}" onto public java.lang.String com.h3c.isearch.controller.SearchRangeController.getRangeView()
+2020-09-22 16:23:05.049  INFO 2964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchRange/searchRangeTable],methods=[POST]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.h3c.isearch.controller.SearchRangeController.searchRangeTable()
+2020-09-22 16:23:05.057  INFO 2964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/searchData],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.h3c.isearch.controller.SearchResultController.searchData(javax.servlet.http.HttpServletRequest,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-09-22 16:23:05.057  INFO 2964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/insertClickLog],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.h3c.isearch.controller.SearchResultController.insertClickLog(javax.servlet.http.HttpServletRequest,int,java.lang.String,int,java.lang.String,java.lang.String)
+2020-09-22 16:23:05.057  INFO 2964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchResult/getSearchResultView],methods=[POST]}" onto public java.lang.String com.h3c.isearch.controller.SearchResultController.getSearchResultView(javax.servlet.http.HttpServletRequest,java.lang.String,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-09-22 16:23:05.057  INFO 2964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-22 16:23:05.057  INFO 2964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 16:23:05.065  INFO 2964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthy],methods=[GET || POST]}" onto public com.eos.common.util.Result com.eos.common.controller.Healthy.healthy()
+2020-09-22 16:23:05.104  INFO 2964 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-09-22 16:23:05.143  INFO 2964 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 16:23:05.143  INFO 2964 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-22 16:23:05.315  INFO 2964 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos IdWorker init
+2020-09-22 16:23:05.323  INFO 2964 --- [restartedMain] c.e.c.c.EosUtilsConfiguration            : <<Eos BaseHealthy init
+2020-09-22 16:23:06.451  INFO 2964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-22 16:23:06.795  INFO 2964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-22 16:23:06.912  INFO 2964 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-09-22 16:23:06.951  INFO 2964 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-22 16:23:06.951  INFO 2964 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2020-09-22 16:23:06.951  INFO 2964 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-09-22 16:23:06.959  INFO 2964 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-22 16:23:06.959  INFO 2964 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-09-22 16:23:06.959  INFO 2964 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2020-09-22 16:23:06.959  INFO 2964 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@14b0a934
+2020-09-22 16:23:07.128  WARN 2964 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-22 16:23:07.636  INFO 2964 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 16:23:07.691  INFO 2964 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-22 16:23:07.723  INFO 2964 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-09-22 16:23:07.723  INFO 2964 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-09-22 16:23:07.723  INFO 2964 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-22 16:23:07.895  INFO 2964 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-09-22 16:23:07.902  INFO 2964 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-22 16:23:07.918  INFO 2964 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-22 16:23:07.926  INFO 2964 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-09-22 16:23:07.926  INFO 2964 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-09-22 16:23:07.926  INFO 2964 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-09-22 16:23:08.005  INFO 2964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/iSearch'
+2020-09-22 16:23:08.015  INFO 2964 --- [restartedMain] com.h3c.isearch.WebApplication           : Started WebApplication in 13.568 seconds (JVM running for 15.464)
+2020-09-22 16:23:23.043  INFO 2964 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/iSearch]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-22 16:23:23.051  INFO 2964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-22 16:23:23.099  INFO 2964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 48 ms

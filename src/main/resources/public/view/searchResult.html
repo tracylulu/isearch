@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+ 	 <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <title>搜索：[[${title}]]</title>
+
+    <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.css}" />
+    <script th:src="@{/bootstrap/js/respond.min.js}"></script>
+    <link rel="stylesheet" th:href="@{/easyui/themes/default/easyui.css}"/>
+    <link rel="stylesheet" th:href="@{/easyui/themes/icon.css}"/>
+
+    <script th:inline="javascript">
+        var context = [[@{/}]];
+        var searchParam = [[${searchParam}]];
+        var results = [[${results}]];
+        var total = [[${total}]];
+        var searchFlag = [[${searchFlag}]];
+        var logId = [[${logSearchId}]];
+        var pageData = [[${fivePageData}]];
+    </script>
+
+    <style type="text/css">
+        .showFlag{display: none !important;}
+        .aStyle{
+            color: #001ba0;
+            text-decoration: underline;
+            font-size: 20px;
+        }
+        .contentStyle{
+            color: #666;
+            font-size: 14px;
+        }
+        .dirStyle{
+            color:#006d21;
+            font-size: 14px;
+        }
+        .timeStyle{
+            text-align: center;
+            text-align-last: center;
+            margin-left: 10px;cursor: pointer;
+        }
+        /*--*/
+        .timeValDiv {
+            width: 307px;
+            text-align: left;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+        .optionsDiv {
+            width: 307px;
+            text-align: left;
+            background: #F7F7F7;
+            border: 1px solid #E0E0E0;
+            border-radius: 4px;
+            padding: 5px 15px;
+            position: absolute;
+        }
+        .option{
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .option:hover {
+            background: #fff;
+        }
+        .btnDiv {
+            margin-top: 10px;
+            text-align: right;
+        }
+        /*.optionsDiv .el-date-editor.el-input {
+            width: 150px !important;
+        }*/
+        .box6{
+            border: none;
+            border-top: 1px solid #3c3c3c;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header" style="width: 200px;">
+                <a class="navbar-brand" href="#">H3C Search</a>
+            </div>
+            <div >
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input class="easyui-textbox" id="searchKey"  style="width: 600px;">
+                    </div>
+                    <a class="easyui-linkbutton" style="width: 100px;" onclick="searchData(1)">搜索</a>
+                </form>
+            </div>
+            <!--<ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+            </ul>-->
+        </div>
+    </nav>
+    <div class="container-fluid" style="margin-top: 50px;padding-left: 230px;">
+        <div style="width: 705px;display: inline-block">
+            <!--<p style="margin-top: 10px;" class="text-danger">由于浏览器安全机制，如果链接无法点开，请复制文件地址到新标签页打开</p>-->
+
+            <div id="totalAndTime" >
+                <p id="showTotal"  class="text-muted" style="display: inline-block;margin:10px 0px 0px 0px;">[[${total}]]个结果</p>
+                <!--<input style="width: 200px;height: 20px;margin-left: 10px;">-->
+                <!--<select class="timeStyle"  onchange="changeSearchTime();" id="searchTime">
+                    <option selected="selected" value="all">全部</option>
+                    <option value="24hour">24小时内</option>
+                    <option value="oneWeek">一周内</option>
+                    <option value="oneMonth">一个月内</option>
+                    <option value="lastYear">去年</option>
+                </select>-->
+                <div style="display: inline-block; margin-left: 10px;">
+                    <div class="timeValDiv"><span onclick="showTime()" style="color: #777" id="timeVal">全部</span></div>
+                    <div class="optionsDiv"  style="display: none">
+                        <div class="option" onclick="changeTime('all','全部')">全部</div>
+                        <div class="option" onclick="changeTime('24hour','24小时内')">24小时内</div>
+                        <div class="option" onclick="changeTime('oneWeek','一周内')">一周内</div>
+                        <div class="option" onclick="changeTime('oneMonth','一个月内')">一个月内</div>
+                        <div class="option" onclick="changeTime('lastYear','去年')">去年</div>
+                        <!--<el-divider></el-divider>-->
+                        <hr class="box6">
+                        <div style="margin-bottom: 10px;">自定义范围</div>
+                        <input id="startTime" class="easyui-datebox" style="width: 135px;" editable="fasle">
+                        <input id="endTime" class="easyui-datebox" style="width: 135px;" editable="fasle">
+                        <div class="btnDiv"><button onclick="changeTime('custom')">应用</button></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="searchResultsDiv">
+            </div>
+
+            <div id="pageDiv" style="text-align: center;">
+                <ul class="pagination pagination-lg" id="pageNo">
+                </ul>
+            </div>
+
+            <div id="noResultsDiv" style="display: none;">
+                <p class="text-left" style="margin-top: 10px;">这里没有什么内容与您的搜索相匹配</p>
+                <ul>
+                    <li>请确保所有单词都拼写正确</li>
+                    <li>请尝试其他搜索条件</li>
+                    <li>请尝试更一般的搜索条件</li>
+                    <li>请尝试减少搜索条件</li>
+                </ul>
+            </div>
+
+            <div id="errorDiv" style="display: none;">
+                <p class="text-danger" style="margin-top: 10px;">搜索错误</p>
+                <ul>
+                    <li>数据发生变化，请重新搜索</li>
+                    <li>搜索异常，请联系管理员</li>
+                </ul>
+            </div>
+
+        </div>
+        <input id="copyUrl" type="hidden">
+    </div>
+
+
+    <!-- <script th:src="@{/jquery/jquery-3.5.1.min.js}"></script> -->
+    <script th:src="@{/jquery/jquery-1.12.4.min.js}"></script>
+    <script th:src="@{/bootstrap/js/bootstrap.js}"></script>
+    <script th:src="@{/bootstrap/js/html5shiv.js}"></script>
+    <script th:src="@{/bootstrap/js/bootstrap-paginator.js}"></script>
+    <script th:src="@{/easyui/jquery.easyui.min.js}"></script>
+    <script th:src="@{/easyui/locale/easyui-lang-zh_CN.js}"></script>
+    <script th:src="@{/sys/js/searchResult.js}"></script>
+</body>
+</html>

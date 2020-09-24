@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.h3c.isearch.mapper.SearchRangeMapper">
+
+    <select id="queryRangeTable" resultType="java.util.Map">
+        SELECT  t.datasource_name,t.datasource_addr,
+            CASE t.datasource_status
+              WHEN 1 THEN '已接入'
+              WHEN 2 THEN '未接入'
+              ELSE ''
+            END  datasource_status
+        FROM search_range t order by range_order;
+    </select>
+
+</mapper>

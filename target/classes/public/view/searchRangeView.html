@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>H3C搜索中心_搜索范围</title>
+
+    <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}" />
+    <link rel="stylesheet" th:href="@{/easyui/themes/default/easyui.css}"/>
+    <link rel="stylesheet" th:href="@{/easyui/themes/icon.css}"/>
+
+    <script th:inline="javascript">
+        var context = [[@{/}]];
+    </script>
+</head>
+<body>
+
+<div class="container" >
+    <div class="row" style="margin-top: 100px;">
+        <div class="col-md-12" style="text-align: center">
+            <div style="display: inline-block">
+                <table id="searchRangeTable" style="width: 800px;"></table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <script th:src="@{/jquery/jquery-3.5.1.min.js}"></script> -->
+<script th:src="@{/jquery/jquery-1.12.4.min.js}"></script>
+<script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+<script th:src="@{/easyui/jquery.easyui.min.js}"></script>
+<script th:src="@{/sys/js/searchRange.js}"></script>
+</body>
+</html>

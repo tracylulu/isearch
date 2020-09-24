@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>H3C搜索中心</title>
+
+    <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}" />
+    <link rel="stylesheet" th:href="@{/easyui/themes/default/easyui.css}"/>
+    <link rel="stylesheet" th:href="@{/easyui/themes/icon.css}"/>
+
+    <script th:inline="javascript">
+        var context = [[@{/}]];
+    </script>
+</head>
+<body>
+
+    <div class="container" >
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-md-12 text-center">
+               <h1 style="font-family:'serif';">知识搜索引擎 iSearch</h1>
+               <!--<h2 style="font-family:'serif';">H3C iSearch</h2>-->
+            </div>
+            <div class="col-md-12 text-center">
+                <input  class="easyui-textbox" style="width:600px" id="searchParam">
+                <a class="easyui-linkbutton" style="width: 100px;" onclick="searchResult()" >搜索</a>
+                <!--<form class="form-inline" role="form">
+                    <div class="form-group">
+                        <input style="width: 600px;" type="text" class="form-control" placeholder="关键字" id="searchParam"/>
+                        <button class="btn btn-default" onclick="searchResult()" >搜 索</button>
+                    </div>
+                </form>-->
+                <!--<p style="margin-top: 10px;" class="text-danger">由于浏览器安全机制，如果链接无法点开，请复制文件地址到新标签页打开</p>-->
+            </div>
+            <div class="col-md-12 text-center">
+                <p style="margin-top: 10px;"><a target='_blank' th:href="@{/searchRange/getRangeView}">知识搜索数据源范围</a></p>
+            </div>
+            <!--<div class="col-md-12" style="text-align: center">
+                <div style="display: inline-block">
+                    <table id="searchRangeTable" style="width: 800px;"></table>
+                </div>
+            </div>-->
+        </div>
+    </div>
+
+    <!-- <script th:src="@{/jquery/jquery-3.5.1.min.js}"></script> -->
+    <script th:src="@{/jquery/jquery-1.12.4.min.js}"></script>
+    <script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+    <script th:src="@{/easyui/jquery.easyui.min.js}"></script>
+    <script th:src="@{/sys/js/globalQuery.js}"></script>
+</body>
+</html>

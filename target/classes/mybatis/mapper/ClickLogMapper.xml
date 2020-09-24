@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.h3c.isearch.mapper.ClickLogMapper">
+
+    <insert id="insertLog" parameterType="java.util.Map" useGeneratedKeys="true" keyProperty="id">
+      INSERT INTO click_log
+      <trim prefix="(" suffix=")" suffixOverrides=",">
+          <if test="userId != null and userId != '' ">
+              userID,
+          </if>
+          <if test="userIp != null and userIp != '' ">
+              userIP,
+          </if>
+          <if test="clickType != null and clickType != '' ">
+              clickType,
+          </if>
+          <if test="pageNumber > 0 ">
+              pageNumber,
+          </if>
+          <if test="rankNumber > 0 ">
+              rankNumber,
+          </if>
+          <if test="linkURL != null and linkURL != '' ">
+              linkURL,
+          </if>
+          searchID
+      </trim>
+      <trim prefix="values (" suffix=")" suffixOverrides=",">
+          <if test="userId != null and userId != '' ">
+              #{userId},
+          </if>
+          <if test="userIp != null and userIp != '' ">
+              #{userIp},
+          </if>
+          <if test="clickType != null and clickType != '' ">
+              #{clickType},
+          </if>
+          <if test="pageNumber > 0 ">
+              #{pageNumber},
+          </if>
+          <if test="rankNumber > 0 ">
+              #{rankNumber},
+          </if>
+          <if test="linkURL != null and linkURL != '' ">
+              #{linkURL},
+          </if>
+            #{searchId}
+      </trim>
+
+    </insert>
+
+</mapper>
